@@ -1,0 +1,29 @@
+html, body {
+	background: #fdf6e3;
+	color: #657b83;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	line-height: 1.5;
+}
+
+#container {
+	margin: auto;
+	width: 640px;
+}
+	
+
+	h1 {
+		color: #859900;
+	}
+
+		h1 span {
+			color: #d33682;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+	
+	h2 { font-weight: normal; }
+
+	canvas {
+		border: 1px solid #d33682;
+		outline: 5px solid #eee8d5;
+	}
