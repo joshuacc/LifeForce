@@ -19,7 +19,7 @@ console.log world
 # Paint the initial world state
 for x in [0..639]
 	for y in [0..359]
-		if l[x][y] == true
+		if world[x][y] == true
 			l_context.fillStyle = "#000"
 		else
 			l_context.fillStyle = "#fff"
