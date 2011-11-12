@@ -1,6 +1,6 @@
 # Initial setup
 
-l_canvas = document.getElementByID "life"
+l_canvas = document.getElementById "life"
 l_context = l_canvas.getContext "2d"
 
 l_context.fillStyle = "#fff"
