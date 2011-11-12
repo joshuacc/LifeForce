@@ -21,4 +21,4 @@ drawworld = ->
 				l_context.fillStyle = "#fff"
 			l_context.fillRect x, y, 1, 1
 
-drawworld
+drawworld()
