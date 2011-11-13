@@ -49,9 +49,9 @@ countneighbors = (x,y) ->
 
 	total
 
-###
 incrementworld = ->
 	newworld = world
+	
 	for x in [0..639]
 		for y in [0..359]
 			neighbors = countneighbors x, y
@@ -60,7 +60,13 @@ incrementworld = ->
 				unless neighbors == 2 or neighbors == 3 then newworld[x][y] = false
 			else
 				if neighbors == 3 then newworld[x][y] = true
-###
+	
+	console.log "world"
+	console.log world
 
+	console.log "newworld"
+	console.log newworld
+
+incrementworld()
 
 
