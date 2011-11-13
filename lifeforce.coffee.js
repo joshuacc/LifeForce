@@ -50,7 +50,17 @@ countneighbors = (x,y) ->
 	total
 
 incrementworld = ->
-	newworld = world
+	# Deep copy of the world state
+	newworld = 
+		for x in [0..639] 
+			for y in [0..359]
+				world[x][y]
+
+	console.log "world before"
+	console.log world
+
+	console.log "newworld before"
+	console.log newworld
 	
 	for x in [0..639]
 		for y in [0..359]
@@ -61,10 +71,10 @@ incrementworld = ->
 			else
 				if neighbors == 3 then newworld[x][y] = true
 	
-	console.log "world"
+	console.log "world after"
 	console.log world
 
-	console.log "newworld"
+	console.log "newworld after"
 	console.log newworld
 
 incrementworld()
