@@ -28,15 +28,19 @@ countneighbors = (x,y) ->
 
 	if x == 0 then westindex = 639
 	else westindex = x - 1
+	console.log "westindex = " + westindex
 
 	if x == 639 then eastindex = 0
 	else eastindex = x + 1
+	console.log "eastindex = " + eastindex
 
 	if y == 0 then northindex = 359
 	else northindex = y - 1
+	console.log "northindex = " + northindex
 
 	if y == 359 then southindex = 0
-	else northindex = y + 1
+	else southindex = y + 1
+	console.log "southindex = " + southindex
 
 	if world[westindex][northindex] == true then total++
 	if world[x][northindex]         == true then total++
