@@ -49,8 +49,6 @@ countneighbors = (x,y) ->
 
 	total
 
-console.log countneighbors 0, 0
-
 ###
 incrementworld = ->
 	newworld = world
