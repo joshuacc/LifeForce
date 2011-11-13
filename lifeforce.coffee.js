@@ -43,14 +43,23 @@ countneighbors = (x,y) ->
 	console.log "southindex = " + southindex
 
 	if world[westindex][northindex] == true then total++
+	console.log "world[westindex #{westindex}][northindex #{northindex}] = #{world[westindex][northindex]}"
 	if world[x][northindex]         == true then total++
+	console.log "world[x #{x}][northindex #{northindex}] = #{world[x][northindex]}"
 	if world[eastindex][northindex] == true then total++
+	console.log "world[eastindex #{eastindex}][northindex #{northindex}] = #{world[eastindex][northindex]}"
 	if world[westindex][y]          == true then total++
+	console.log "world[westindex #{westindex}][y #{y}] = #{world[westindex][y]}"
 	if world[x][y]                  == true then total++
+	console.log "world[x #{x}][y #{y}] = #{world[x][y]}"
 	if world[eastindex][y]          == true then total++
+	console.log "world[eastindex #{eastindex}][y #{y}] = #{world[eastindex][y]}"
 	if world[westindex][southindex] == true then total++
+	console.log "world[westindex #{westindex}][southindex #{southindex}] = #{world[westindex][southindex]}"
 	if world[x][southindex]         == true then total++
+	console.log "world[x #{x}][southindex #{southindex}] = #{world[x][southindex]}"
 	if world[eastindex][southindex] == true then total++
+	console.log "world[eastindex #{eastindex}][southindex #{southindex}] = #{world[eastindex][southindex]}"
 
 	total
 
