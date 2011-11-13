@@ -22,3 +22,48 @@ drawworld = ->
 			l_context.fillRect x, y, 1, 1
 
 drawworld()
+
+countneighbors = (x,y) ->
+	total = 0
+
+	if x == 0 then westindex = 639
+	else westindex = x - 1
+
+	if x == 639 then eastindex = 0
+	else eastindex = x + 1
+
+	if y == 0 then northindex = 359
+	else northindex = y - 1
+
+	if y == 359 then southindex = 0
+	else northindex = y + 1
+
+	if world[westindex][northindex] == true then total++
+	if world[x][northindex]         == true then total++
+	if world[eastindex][northindex] == true then total++
+	if world[westindex][y]          == true then total++
+	if world[x][y]                  == true then total++
+	if world[eastindex][y]          == true then total++
+	if world[westindex][southindex] == true then total++
+	if world[x][southindex]         == true then total++
+	if world[eastindex][southindex] == true then total++
+
+	total
+
+console.log countneighbors 0, 0
+
+###
+incrementworld = ->
+	newworld = world
+	for x in [0..639]
+		for y in [0..359]
+			neighbors = countneighbors x, y
+
+			if world[x][y] == true
+				unless neighbors == 2 or neighbors == 3 then newworld[x][y] = false
+			else
+				if neighbors == 3 then newworld[x][y] = true
+###
+
+
+
