@@ -70,6 +70,11 @@ incrementworld = ->
 			else
 				if neighbors == 3 then newworld[x][y] = true
 	
+	for x in [0..4]
+		for y in [0..4]
+			console.log "world[#{x}][#{y}]    == #{world[x][y]}"
+			console.log "newworld[#{x}][#{y}] == #{world[x][y]}"
+			
 	console.log "world after"
 	console.log world
 
