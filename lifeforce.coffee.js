@@ -55,11 +55,6 @@ incrementworld = ->
 		for x in [0..639] 
 			for y in [0..359]
 				world[x][y]
-
-	for x in [0..4]
-		for y in [0..4]
-			console.log "world[#{x}][#{y}]    == #{world[x][y]}"
-			console.log "newworld[#{x}][#{y}] == #{newworld[x][y]}"
 	
 	for x in [0..639]
 		for y in [0..359]
@@ -69,17 +64,6 @@ incrementworld = ->
 				unless neighbors == 2 or neighbors == 3 then newworld[x][y] = false
 			else
 				if neighbors == 3 then newworld[x][y] = true
-	
-	for x in [0..4]
-		for y in [0..4]
-			console.log "world[#{x}][#{y}]    == #{world[x][y]}"
-			console.log "newworld[#{x}][#{y}] == #{newworld[x][y]}"
-
-	console.log "world after"
-	console.log world
-
-	console.log "newworld after"
-	console.log newworld
 
 incrementworld()
 
