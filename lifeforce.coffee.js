@@ -56,6 +56,7 @@ incrementworld = ->
 			for y in [0..359]
 				world[x][y]
 	
+	# Run Conway's rules over each cell
 	for x in [0..639]
 		for y in [0..359]
 			neighbors = countneighbors x, y
@@ -65,6 +66,17 @@ incrementworld = ->
 			else
 				if neighbors == 3 then newworld[x][y] = true
 
-incrementworld()
+	# Update world with deep copy of new state
+	world = 
+		for x in [0..639] 
+			for y in [0..359]
+				newworld[x][y]
+
+stepforward = ->
+	incrementworld()
+	drawworld()
+
+
+setInterval stepforward, 250
 
 
