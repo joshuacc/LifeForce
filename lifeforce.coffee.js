@@ -22,10 +22,10 @@ drawworld = ->
 	for x in [0..639]
 		for y in [0..359]
 			if world[x][y] == true
-				f_context.fillStyle = "rgba(255,255,255,0.004)"
+				f_context.fillStyle = "rgba(255,255,255,0.0041)"
 				l_context.fillStyle = "#000"
 			else
-				f_context.fillStyle = "rgba(0,0,0,0.004)"
+				f_context.fillStyle = "rgba(0,0,0,0.0041)"
 				l_context.fillStyle = "#fff"
 			l_context.fillRect x, y, 1, 1
 
