@@ -29,7 +29,6 @@ drawworld = ->
 				l_context.fillStyle = "#fff"
 			l_context.fillRect x, y, 1, 1
 
-			f_context.fillStyle = "rgba(255,255,255,0.0039)"
 			f_context.fillRect x, y, 1, 1
 
 drawworld()
