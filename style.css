@@ -26,4 +26,5 @@ html, body {
 	canvas {
 		border: 1px solid #d33682;
 		outline: 5px solid #eee8d5;
+		margin-bottom: 1em;
 	}
