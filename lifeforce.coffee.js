@@ -3,6 +3,12 @@
 l_canvas = document.getElementById "life"
 l_context = l_canvas.getContext "2d"
 
+f_canvas = document.getElementById "force"
+f_context = f_canvas.getContext "2d"
+
+f_context.fillStyle = "#808080"
+f_context.fillRect 0, 0, 640, 360
+
 # Initialize a 2d array
 # False represents a "dead" cell, while true represents a "live" cell
 world =
