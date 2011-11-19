@@ -12,6 +12,7 @@ l_context.fillRect 0, 0, 640, 360
 f_context.fillStyle = "#808080"
 f_context.fillRect 0, 0, 640, 360
 
+refresher = null
 
 runvisualization = ->
 
@@ -94,8 +95,11 @@ runvisualization = ->
 		drawworld()
 
 
-	setInterval stepforward, 250
+	refresher = setInterval stepforward, 250
 
 
 playbutton = document.getElementById 'play'
 playbutton.onclick = -> runvisualization()
+
+stopbutton = document.getElementById 'stop'
+stopbutton.onclick = -> clearTimer refresher
