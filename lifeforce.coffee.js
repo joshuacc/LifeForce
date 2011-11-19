@@ -6,8 +6,12 @@ l_context = l_canvas.getContext "2d"
 f_canvas = document.getElementById "force"
 f_context = f_canvas.getContext "2d"
 
+l_context.fillStyle = "#fff"
+l_context.fillRect 0, 0, 640, 360
+
 f_context.fillStyle = "#808080"
 f_context.fillRect 0, 0, 640, 360
+
 
 runvisualization = ->
 
@@ -93,3 +97,5 @@ runvisualization = ->
 	setInterval stepforward, 250
 
 
+playbutton = document.getElementById 'play'
+playbutton.onclick runvisualization()
