@@ -103,3 +103,7 @@ playbutton.onclick = -> runvisualization()
 
 stopbutton = document.getElementById 'stop'
 stopbutton.onclick = -> clearInterval refresher
+
+savebutton = document.getElementById 'save'
+savebutton.onclick = -> 
+	window.open f_canvas.toDataURL(), "canvasImage", "left=0,top=0,width=#{f_canvas.width},height=#{f_canvas.height},toolbar=0,resizable=0"
