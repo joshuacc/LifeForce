@@ -1,4 +1,6 @@
-# A visualization of Conway's Game of Life over time, implemented with Canvas and CoffeeScript.
+# LifeForce
+
+## A visualization of Conway's Game of Life over time, implemented with Canvas and CoffeeScript.
 
 Live page: http://joshuacc.github.com/LifeForce/
        
