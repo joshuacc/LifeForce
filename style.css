@@ -23,7 +23,8 @@ html, body {
 	
 	h2, h3 { font-weight: normal; }
 
-	a { color: #268bd2;}
+	a { color: #268bd2; }
+	a:hover { background: #eee8d5; }
 
 	#button-row { margin-top: 3em;}
 
