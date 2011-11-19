@@ -98,4 +98,4 @@ runvisualization = ->
 
 
 playbutton = document.getElementById 'play'
-playbutton.onclick = -> console.log 'test'
+playbutton.onclick = -> runvisualization()
