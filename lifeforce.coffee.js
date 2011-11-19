@@ -98,4 +98,4 @@ runvisualization = ->
 
 
 playbutton = document.getElementById 'play'
-playbutton.onclick runvisualization()
+playbutton.onclick runvisualization
