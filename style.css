@@ -21,7 +21,7 @@ html, body {
 			text-transform: uppercase;
 		}
 	
-	h2 { font-weight: normal; }
+	h2, h3 { font-weight: normal; }
 
 	canvas {
 		border: 1px solid #d33682;
