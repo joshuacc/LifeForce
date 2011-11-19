@@ -23,6 +23,8 @@ html, body {
 	
 	h2, h3 { font-weight: normal; }
 
+	#button-row { margin-top: 3em;}
+
 	canvas {
 		border: 1px solid #d33682;
 		outline: 5px solid #eee8d5;
