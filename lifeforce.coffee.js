@@ -102,4 +102,4 @@ playbutton = document.getElementById 'play'
 playbutton.onclick = -> runvisualization()
 
 stopbutton = document.getElementById 'stop'
-stopbutton.onclick = -> clearTimer refresher
+stopbutton.onclick = -> clearInterval refresher
