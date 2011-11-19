@@ -24,7 +24,11 @@ html, body {
 	h2, h3 { font-weight: normal; }
 
 	a { color: #268bd2; }
-	a:hover { background: #eee8d5; }
+	a:hover { 
+		background: #eee8d5;
+		color: #2aa198;
+		text-decoration: underline;
+	}
 
 	#button-row { margin-top: 3em;}
 
