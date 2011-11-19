@@ -30,7 +30,7 @@ drawworld = ->
 
 			l_context.fillRect x, y, 1, 1
 
-			f_context.fillStyle = "rgba(0,0,0,0.1)"
+			f_context.fillStyle = "rgba(0,0,0,0.01)"
 			f_context.fillRect x, y, 1, 1
 
 drawworld()
