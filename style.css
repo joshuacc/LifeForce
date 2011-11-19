@@ -27,7 +27,7 @@ html, body {
 	a:hover { 
 		background: #eee8d5;
 		color: #2aa198;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 	#button-row { margin-top: 3em;}
